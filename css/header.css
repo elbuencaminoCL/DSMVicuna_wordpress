@@ -1,0 +1,328 @@
+/* ESTILOS HEADER */
+
+*{
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    outline: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#header{
+	z-index: 5;
+    position: relative;
+}
+#header #top-menu .telefono{
+	float: left;
+	margin: 10px 0px;
+	color: #FFF;
+	text-decoration: none;
+}
+#header #top-menu {
+    background: transparent;
+    color: #FFF;
+    position: relative;
+    border-radius: 0px;
+    border: 0px;
+    margin: 0px 0px 0px 0px;
+    min-height: 5px;
+}
+#header #top-menu ul li a {
+    color: #FFF;
+    padding: 8px 15px;
+    line-height: 22px;
+    font-size: 14px;
+}
+#header #top-menu .fb,
+#header #top-menu .tt{
+    border-radius: 100%;
+    border: 1px solid #FFF;
+    padding: 4px;
+    line-height: 12px;
+    margin: 6px;
+}
+#header #top-menu .fb img,
+#header #top-menu .tt img{
+	width: 16px;
+}
+#header .nav-toggler-movil{
+	float: left;
+	width: 24%;
+}
+#header #logotipo{
+	width: 100%;
+}
+#header #logotipo .clearfix{
+	display: block;
+}
+#header #logotipo .clearfix img:nth-of-type(1){
+	margin: 5px 0px 0px 0px;
+}
+#header .dropdown-menu {
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    -webkit-box-shadow: 0 2px 4px 3px rgba(0,0,0,.175);
+    box-shadow: 0 2px 4px 3px rgba(0,0,0,.175);
+}
+#header #menu-principal.navbar {
+    min-height: 70px;
+    background-color: transparent;
+}
+#header #menu-principal {
+    border-radius: 0px;
+    border: 0px;
+    margin: 0px 0px 0px 0px;
+    z-index: 3000;
+}
+#header #menu-principal .container{
+	padding: 0px 45px;
+	background: #FFF;
+    border-radius: 100px;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,.175);
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,.175);
+}
+#header #menu-principal .navbar-brand {
+    position: relative;
+    z-index: 2;
+    padding: 0px 0px 0px 27px;
+    margin: 0px 0px;
+    display: block;
+    height: auto;
+}
+#header #menu-principal ul.navbar-nav{
+	float: right;
+}
+#header #menu-principal ul li a {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 20px 6px;
+    color: #666;
+    border: none;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+}
+#header #menu-principal ul li a:hover{
+	font-weight: bold;
+	color: #915354;
+	border-bottom: 3px solid #915354;
+    transition: all 0.5s;
+}
+#header #menu-principal .dropdown-menu li a{
+	padding: 10px;
+	color: #915354;
+}
+#header #menu-principal .dropdown-menu li a:hover {
+	border-color: transparent;
+    background-color: #915354;
+    color: #FFF;
+}
+#header #menu-principal .navbar-collapse{
+	float: right;
+	width: 75%;
+	padding: 0px 0px;
+}
+#header #menu-principal .navbar-brand img{
+	max-width: 208px;
+	margin: -10px 0px -7px 0px;
+}
+#header #menu-principal .open > a, 
+#header #menu-principal .open > a:hover, 
+#header #menu-principal .open > a:focus{
+	font-weight: 600;
+	background: #915354;
+	color: #FFF;
+	transition: all 0.2s;
+}
+
+@media only screen and (max-width : 1200px) {
+
+	#header #menu-principal ul li a{
+	    font-size: 12px;
+	    padding: 20px 4px;
+	}	
+	#header #logotipo .clearfix img:nth-of-type(1){
+		max-width: 150px;
+    	margin: 10px 0px 0px 0px;
+	}
+
+}
+
+@media only screen and (max-width : 992px) {
+
+	#header #top-menu .fb, #header #top-menu .tt {
+	   	border-radius: 0px;
+	    border: 0px;
+	    padding: 0px;
+	    line-height: 40px;
+	    margin: 0px;
+	}
+	#header #top-menu .telefono{
+		display: block;
+		float: none;
+		text-align: center;
+		font-size: 14px;
+		border: 0px;
+		padding: 14px 0px;
+		text-transform: uppercase;
+		margin: 0px 0px;
+	}
+	#header #top-menu .telefono:hover{
+		background: #915354;
+	}
+	
+	#header #logotipo{
+		float: left;
+		width: 70%;
+	}
+	#header .nav-toggler-movil{
+		float: none;
+		width: auto;
+		margin: 0px 15px;
+		background: #FFF;
+		border-radius: 100px;		
+	    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,.175);
+	    box-shadow: 0px 3px 10px 0px rgba(0,0,0,.175);
+	}
+	#header #menu-principal{
+		padding: 0px;
+	}
+	#header #menu-principal .container{
+		background: none;
+		box-shadow: none;
+		padding: 0px 0px;
+		margin: 0px 0px;
+	}
+	#header #menu-principal .navbar-brand {
+	    position: relative;
+	    z-index: 2;
+	    padding: 0px 0px 0px 26px;
+	    display: block;
+	    line-height: normal;
+	    height: auto;
+	}
+	#header #logotipo .clearfix img:nth-of-type(1){
+		max-width: 150px;
+		margin: 10px 0px 0px 25px;
+	}
+	#header{
+		background: transparent;
+		position: absolute;
+		width: 100%;
+		z-index: 9999;
+	}
+	#header #top-menu{
+		margin: 20px 0px 0px 0px;
+	}
+	#header #top-menu .navbar-collapse{
+		border-top: 0px;
+		box-shadow: none;
+		background: #A66;
+		margin: 0px 45px;
+	}
+	#header .navbar-nav{
+		margin: 0px 0px;
+	}
+	#header #menu-principal ul.navbar-nav{
+		border-top: 1px solid #eee;
+		float: none;
+		background: #FFF;
+		margin: 0px 45px;
+		box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+	}
+	#header #menu-principal .navbar-collapse{
+		border: 0px;
+		float: none;
+		width: 100%;
+		margin: 0px 0px;
+		box-shadow: none;
+	}
+	#header #menu-principal ul li a,
+	#header #top-menu ul li a{
+		text-align: center;
+		font-size: 14px;
+		border: 0px;
+		padding: 14px 0px;
+		text-transform: uppercase;
+	}
+	#header #menu-principal ul li a .caret,
+	#header #top-menu ul li a .caret{
+		display: none;
+	}
+
+	#header #menu-principal ul li a:hover{
+		background: #915354;
+		border: 0px;
+		color: #FFF;
+	}
+	#header #top-menu ul li a:hover{
+		background: #915354;
+		border: 0px;	
+	}
+	#header #menu-principal ul li a .dropper{
+		display: none;
+	}
+	#header .navbar-collapse{
+		padding: 0px 0px;
+	}
+	#header .navbar-toggle{
+		margin: 19px 15px;
+		border: 0px;
+	}
+	#header .navbar-default .navbar-toggle .icon-bar{
+		background: #915354;
+	}
+	#header #top-menu .fb:hover{
+		background: #3b5998;
+	}
+	#header #top-menu .tt:hover{
+		background: #55acee;
+	}
+	#header .nav-toggler-movil:before{
+		display: table;
+    	content: " ";
+	}
+	#header .nav-toggler-movil:after{
+		clear: both;
+		display: table;
+	    content: " ";
+	}
+	#header .open a.dropdown-toggle{
+		background: #7F1821;
+		color: #FFF;
+	}
+	#header .navbar-nav .open .dropdown-menu{
+		background: #EEE;
+	}
+	#header .navbar-nav .open .dropdown-menu a{
+		color: #116450;
+		padding: 10px 80px;
+    	text-align: left;
+	}
+	#header .navbar-nav .open .dropdown-menu a:hover{
+		color: #FFF;
+	}
+
+}
+
+
+@media only screen and (min-width : 992px) and (max-width : 1024px) {
+
+	#header #menu-principal ul li a {
+	    line-height: 30px;
+	}
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+
+	#header .container {
+	    width: 100%;
+	    max-width: 100%;
+	}
+
+}
